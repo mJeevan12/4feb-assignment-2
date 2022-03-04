@@ -1,0 +1,14 @@
+l=[]
+n=int(input())
+for i in range(n):
+    x=int(input())
+    l.append(x)
+print(l)
+t=[]
+for i in l:
+   if i not in t:
+      t.append(i)
+print(t)
+t.sort(reverse=True)
+print(t)
+print("second runner up is:",t[2])
